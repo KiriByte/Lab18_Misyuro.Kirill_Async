@@ -1,4 +1,4 @@
-﻿@model dynamic
+﻿@model CustomModel
 
 @{
     ViewBag.Title = "title";
@@ -9,3 +9,8 @@
 
 <a asp-controller="Custom" asp-action="Start">Start</a>
 <a asp-controller="Custom" asp-action="Stop">Stop</a>
+
+@* ReSharper disable once HeapView.BoxingAllocation *@
+<div>i=@Model.i</div>
+@* ReSharper disable once HeapView.BoxingAllocation *@
+<div>Counter=@Model.Counter</div>
